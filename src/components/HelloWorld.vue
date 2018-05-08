@@ -35,7 +35,7 @@
     name: 'HelloWorld',
     data () {
       return {
-        msg: 'Welcome to Roc\'s Zone !'
+        msg: 'Welcome to Roc\'s zone !'
       }
     }
   }
