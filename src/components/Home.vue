@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <h2 class="animated bounceInDown">{{ msg }}</h2>
-    <ul>
+    <h1 class="animated bounceInDown" title="不想和他们一样。">{{ msg }}</h1>
+    <ul class="menu">
       <li class="animated bounceInLeft">
         <a
           href="https://github.com/rocwangv"
@@ -32,10 +32,10 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'Home',
     data () {
       return {
-        msg: 'Welcome to Roc\'s zone !'
+        msg: 'ROC WONG'
       }
     }
   }
@@ -44,7 +44,8 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   h1, h2 {
-    font-weight: normal;
+    font-weight: 700;
+    letter-spacing: 5px;
   }
 
   ul {
@@ -59,12 +60,18 @@
 
   a {
     color: #42b983;
-    text-decoration: none;
+  }
+  a:hover,a:focus{
+    background: #42b983;
+    color: #ffffff;
   }
 
   .hello {
     position: absolute;
     top: 40%;
     width: 100%;
+  }
+  .menu{
+    margin-top: 20px;
   }
 </style>

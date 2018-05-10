@@ -1,13 +1,20 @@
 <template>
   <div id="app">
     <router-view/>
-    <a href="http://www.miitbeian.gov.cn/" target="_blank"><p class="bei-an">京ICP备18022839号</p></a>
+    <div class="footer">
+      <span>©{{y}} RocWong</span>
+      <span> | </span>
+      <a href="http://www.miitbeian.gov.cn/" target="_blank"><span>京ICP备18022839号</span></a>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'App'
+    name: 'App',
+    data(){
+      return { y: new Date().getFullYear() }
+    }
   }
 </script>
 
@@ -22,11 +29,17 @@
     overflow: hidden;
   }
 
-  .bei-an {
+  .footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
     color: #666;
     font-size: 12px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
   }
+
+  .footer a, .footer a:visited, .footer a:hover {
+    color: #666;
+
+  }
+
 </style>
