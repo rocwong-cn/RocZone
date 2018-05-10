@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-    <p class="bei-an">京ICP备18022839号</p>
+    <a href="http://www.miitbeian.gov.cn/" target="_blank"><p class="bei-an">京ICP备18022839号</p></a>
   </div>
 </template>
 
