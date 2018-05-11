@@ -2,10 +2,29 @@
   <div id="app">
     <router-view/>
     <div class="footer">
-      <span>©{{y}} RocWong</span>
-      <span> | </span>
-      <a href="http://www.miitbeian.gov.cn/" target="_blank"><span>京ICP备18022839号</span></a>
+      <div class="license">
+        <span>©{{y}}&nbsp;RocWong</span>
+        <span> | </span>
+        <a href="http://www.miitbeian.gov.cn/" target="_blank"><span>京ICP备18022839号</span></a>
+      </div>
+      <svg class="editorial" xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0
+                                        58-18 88-18s
+                                        58 18 88 18
+                                        58-18 88-18
+                                        58 18 88 18
+                                        v44h-352z"></path>
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="rgba(128,215,175,.5)"></use>
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="rgba(128,215,175,.5)"></use>
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="rgba(128,215,175,.5)"></use>
+        </g>
+      </svg>
     </div>
+
   </div>
 </template>
 
@@ -17,29 +36,3 @@
     }
   }
 </script>
-
-<style>
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .footer {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    color: #666;
-    font-size: 12px;
-  }
-
-  .footer a, .footer a:visited, .footer a:hover {
-    color: #666;
-
-  }
-
-</style>

@@ -6,7 +6,76 @@ html, body {
   padding: 0;
   overflow: hidden;
 }
+body{
+  border-top: 2px dotted #42b983;
+}
 
 a {
   text-decoration: none;
 }
+
+/* APP.vue */
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #666;
+  font-size: 12px;
+}
+
+.footer .license {
+  z-index:1;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.footer .license a, .footer .license a:visited, .footer .license a:hover {
+  color: #666;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate(-90px, 0)
+  }
+
+  100% {
+    transform: translate(85px, 0)
+  }
+}
+
+.editorial {
+  display: block;
+  width: 100%;
+  height: 100px;
+  max-height: 100vh;
+  margin-top: -101px
+}
+
+.parallax > use {
+  animation: move-forever 12s linear infinite
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -2s;
+  animation-duration: 5s
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 3s
+}
+
