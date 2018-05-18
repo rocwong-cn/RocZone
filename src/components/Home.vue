@@ -61,17 +61,24 @@
   a {
     color: #42b983;
   }
-  a:hover,a:focus{
+
+  a:hover, a:focus {
     background: #42b983;
     color: #ffffff;
   }
 
   .hello {
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: 100%;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
   }
-  .menu{
+
+  .menu {
     margin-top: 20px;
   }
 </style>
