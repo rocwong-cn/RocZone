@@ -12,7 +12,7 @@
       </li>
       <li class="animated bounceInUp">
         <a
-          href="http://rocwang.cc"
+          href="http://blog.rocwong.cn"
           target="_blank"
         >
           Blog
